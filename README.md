@@ -3,11 +3,10 @@ About Notes and resources for the Active Directory
 
 # Notes :
 ---------
-1) Creds
-Administrator:P@ssword
+
 Domain : mydomain.local
 
-2) transfer files :
+transfer files :
 PS C:\Users\User\active_directory> $dc = New-PSSession 192.168.60.155 -Credential (Get-Credential)
 
 PS C:\Users\User\active_directory> Copy-Item .\install_dc.md -ToSession $dc C:\Windows\Tasks
