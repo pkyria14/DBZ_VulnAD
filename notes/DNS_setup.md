@@ -1,4 +1,4 @@
-To set up the Active Directory Domain Name System (DNS) on a domain controller, follow these steps:
+# To set up the Active Directory Domain Name System (DNS) on a domain controller, follow these steps:
 
 1. Open the Server Manager on the domain controller and click on the "Tools" menu.
 2. In the "Tools" menu, select "DNS" to open the DNS Manager.

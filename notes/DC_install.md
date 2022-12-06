@@ -1,4 +1,4 @@
-To install an Active Directory Domain Controller (AD DC) on a Windows machine, follow these steps:
+# To install an Active Directory Domain Controller (AD DC) on a Windows machine, follow these steps:
 
 1. Open the Server Manager and click on the "Add roles and features" link.
 2. On the "Before you begin" page, click "Next".

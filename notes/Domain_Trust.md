@@ -1,4 +1,4 @@
-To create a trust between two domains in Active Directory (AD), follow these steps:
+# To create a trust between two domains in Active Directory (AD), follow these steps:
 
 1. Open the Active Directory Domains and Trusts snap-in on the domain controller of the trusting domain.
 2. In the "Active Directory Domains and Trusts" snap-in, right-click on the name of the trusting domain, and select "Properties".
