@@ -1,6 +1,6 @@
 To transfer files from one domain-joined machine to another, you can use one of the following methods:
+Use the Windows file sharing feature to share a folder on the source machine, and access the shared folder from the destination machine using the network path (e.g. \\source_machine\shared_folder). 
 
-- Use the Windows file sharing feature to share a folder on the source machine, and access the shared folder from the destination machine using the network path (e.g. \\source_machine\shared_folder). 
 To do this, follow these steps:
 
 1. On the source machine, right-click on the folder that you want to share, and select "Properties".
