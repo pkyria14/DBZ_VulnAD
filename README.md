@@ -14,7 +14,7 @@ The virtual machines will be available for download at my github repository for 
 
 3 Domains and 7 machines (5 servers and 2 workstations)
 
-There will be a X number of vulnerabilities on each machine and Y ways to exploit them and get access. Once you an attacker gets access to one machine, he will be able to escalate his privileges and pivot through the network and the domains until he compromises the domain admin of every domain. The environment consists of DBZ root domain, EARTH leaf domain and NAMEK leaf domain. As its portraited in Figure 1, there is a trust relationship between all the domains and thus an attacker can exploit that relationship to pivot from domain to domain.
+There will be a number of vulnerabilities on each machine and Y ways to exploit them and get access. Once you an attacker gets access to one machine, he will be able to escalate his privileges and pivot through the network and the domains until he compromises the domain admin of every domain. The environment consists of DBZ root domain, EARTH leaf domain and NAMEK leaf domain. As its portraited in Figure 1, there is a trust relationship between all the domains and thus an attacker can exploit that relationship to pivot from domain to domain.
 -----
 ## Sample Demo
 
