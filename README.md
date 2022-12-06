@@ -66,3 +66,27 @@ Dump hashes - Upload mimikatz to the victim and run:
 ```powershell
 Invoke-Mimikatz -Command '"token::elevate" "lsadump::sam"'
 ```
+
+## Attack vectors
+### Setup different attack vectors by running the scripts on the domain controller of the targetted domain.
+
+List of attack vectors:
+
+- ACLs/ACEs -> abuse weak permissions
+- ASREPRoastable user
+- Anonymous LDAP
+- AD certificates
+- GPO abuse
+- NTLM Relay
+- Resource Based Constrained
+- Kerberoastable user
+- Pass the ticket
+- SID History Injection
+- Overpass/Pass the hash
+- Constrained delegation -> impersonate a user against a service
+- Unconstrained Delegation
+- Silver Ticket
+- Golden Ticket
+- Skeleton Key
+
+This list will be often updated as I work on creating more scripts.
