@@ -1,9 +1,9 @@
 {
-    "domain": "xyz.com",
+    "domain": "dbz.com",
 
     "groups" : [
         {
-            "name": "Employees"
+            "name": "Zfighters"
         }
     ],
 
@@ -11,26 +11,26 @@
 
         {
             "local_admin": ["ws01"],
-            "name": "Alice Lice",
-            "password":"bubbles",
+            "name": "son.goku",
+            "password":"pass",
             "groups": [
                 "Employees"
             ]
         },
         {
             "local_admin": ["ws02"],
-            "name": "Bob Ob",
-            "password":"ashley",
+            "name": "korin.z",
+            "password":"pass2",
             "groups": [
                 "Employees"
             ]
         },
         {
             "local_admin": ["ws01", "ws02", "dc1"],
-            "name": "Charlie Harlie",
-            "password":"P@ssw0rdABC",
+            "name": "son.goku",
+            "password":"pass",
             "groups": [
-                "Employees"
+                "Zfighters"
             ]
         }
     ]
