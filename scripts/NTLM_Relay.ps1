@@ -1,9 +1,9 @@
 # Define task and schedule parameters
-$task = '/c powershell New-PSDrive -Name "Public" -PSProvider "FileSystem" -Root "\\son.goku\Private"'
+$task = '/c powershell New-PSDrive -Name "Public" -PSProvider "FileSystem" -Root "\\Meren\Private"'
 $repeatInterval = New-TimeSpan -Minutes 5
-$taskName = "NTLM_SCRIPT"
-$user = "dbz.com\king.yemma"
-$password = "Bringmecookies@@@"
+$taskName = "ntlm_bot"
+$user = "north.sevenkingdoms.local\eddard.stark"
+$password = "FightP3aceAndHonor!"
 
 # Create scheduled task action, trigger, and settings
 $action = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "$task"

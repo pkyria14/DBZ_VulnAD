@@ -1,0 +1,1 @@
+Set-ADComputer -Identity "NAMEK" -TrustedForDelegation $true
