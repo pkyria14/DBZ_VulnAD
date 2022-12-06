@@ -1,7 +1,6 @@
 # DBZ AD
 
-![Lay of the Land](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eacc79ac-363e-40be-9555-afa3dfdb4c7b/Untitled.png)
-
+![Lay of the Land](https://github.com/pkyria14/active_directory/blob/main/images/DBZ_AD.png?raw=true)
 ## Motivation
 
 This project was an idea I had when I was studying for my OSCP (2022 version). The active directory part of the exam was new and I wanted a way to get familiar with the ways an attacker should approach attacking the active directory environment. My way of familiarizing myself with active directory was to setup my own lab and experiment with a wide range of attacks on it. I believe this will help future students or people with not a lot of experience with active directory security, to familiarize themselves by experimenting and attacking in their own home lab.
@@ -14,8 +13,8 @@ The virtual machines will be available for download at my github repository for 
 
 3 Domains and 7 machines (5 servers and 2 workstations)
 
-There will be a number of vulnerabilities on each machine and Y ways to exploit them and get access. Once you an attacker gets access to one machine, he will be able to escalate his privileges and pivot through the network and the domains until he compromises the domain admin of every domain. The environment consists of DBZ root domain, EARTH leaf domain and NAMEK leaf domain. As its portraited in Figure 1, there is a trust relationship between all the domains and thus an attacker can exploit that relationship to pivot from domain to domain.
------
+There will bea a number of vulnerabilities on each machine and Y ways to exploit them and get access. Once you an attacker gets access to one machine, he will be able to escalate his privileges and pivot through the network and the domains until he compromises the domain admin of every domain. The environment consists of DBZ root domain, EARTH leaf domain and NAMEK leaf domain. As its portraited in Figure 1, there is a trust relationship between all the domains and thus an attacker can exploit that relationship to pivot from domain to domain.
+
 ## Sample Demo
 
 An attacker finds an exposed web server in the web from the DBZ company that is trying to hire a fighter. That web server is accepting the candidates resume as a pdf from a file upload. There are some vulnerabilities in the file upload code of php that might let the attacker upload a reverse shell on the web server and get access to the internal systems of the server. Then the attacker will need to find a way to elevate his privileges from *iis apppool\defaultapppool* to ***nt authority/system.*** After the successful privilege escalation the attacker will be able to pivot through the domain and enumerate other machines to find possible targets. 
@@ -35,8 +34,6 @@ Upload Vulnerability:
     
 
 File upload main headers :
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61e3cee7-9719-46ce-ad2d-bedb98871bcd/Untitled.png)
 
 - bless editor to edit file’s header info
 
@@ -69,5 +66,3 @@ Dump hashes - Upload mimikatz to the victim and run:
 ```powershell
 Invoke-Mimikatz -Command '"token::elevate" "lsadump::sam"'
 ```
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b96a21d6-28ed-4af7-9448-8c32ab720cbc/Untitled.png)
