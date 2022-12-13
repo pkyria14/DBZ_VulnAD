@@ -1,6 +1,4 @@
 # DBZ AD
-
-![Lay of the Land](https://github.com/pkyria14/active_directory/blob/main/images/DBZ_AD.png?raw=true)
 ## Motivation
 
 This project was an idea I had when I was studying for my OSCP (2022 version). The active directory part of the exam was new and I wanted a way to get familiar with the ways an attacker should approach attacking the active directory environment. My way of familiarizing myself with active directory was to setup my own lab and experiment with a wide range of attacks on it. I believe this will help future students or people with not a lot of experience with active directory security, to familiarize themselves by experimenting and attacking in their own home lab.
